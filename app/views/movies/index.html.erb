@@ -4,9 +4,7 @@
 
 <hr>
 
-<div>
-  <%= details_url(42) %>
-</div>
+
 
 <div>
   <a href="<%= new_movie_path %>">Add a new movie</a>
@@ -60,9 +58,9 @@
     <td>
       <%= time_ago_in_words(a_movie.updated_at) %> ago
     </td>
-
-    <td>
-      <a href="/movies/<%= a_movie.id %>">
+    
+    <td> 
+      <a href="<%= movie_path(a_movie) %>">
         Show details
       </a>
     </td>
